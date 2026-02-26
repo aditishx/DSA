@@ -7,15 +7,14 @@ public class SqrtUsingBST {
         if (n == 0 || n == 1)
             return n;
 
-        int low = 0;
-        int high = n;
+        int start = 0;
+        int end = n;
         int ans = 0;
 
-        while (low <= high) {
+        while (start <= end) {
 
-            int mid = low + (high - low) / 2;
+            int mid = start + (end - start) / 2;
 
-            // Use long to prevent overflow
             long square = (long) mid * mid;
 
             if (square == n) {
@@ -23,10 +22,10 @@ public class SqrtUsingBST {
             }
             else if (square < n) {
                 ans = mid;        // store possible answer
-                low = mid + 1;    // try bigger
+                start = mid + 1;    // try bigger
             }
             else {
-                high = mid - 1;   // try smaller
+                end = mid - 1;   // try smaller
             }
         }
 
