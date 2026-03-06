@@ -1,4 +1,4 @@
-package com.aditi.basics;
+package com.aditi.Feb25.Class;
 
 public class NearlySortedArray {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.aditi.Assignment.Feb23;
+package com.aditi.Feb23.Assignment;
 
 public class FindFirstAndLastPosition {
     public int[] searchRange(int[] nums, int target) {

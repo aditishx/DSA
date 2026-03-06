@@ -1,4 +1,4 @@
-package com.aditi.Assignment.Feb22;
+package com.aditi.Feb22.Assignment;
 import java.util.Arrays;
 
 public class MoveZeroes {

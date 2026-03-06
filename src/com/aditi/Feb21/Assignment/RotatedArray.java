@@ -1,4 +1,4 @@
-package com.aditi.Assignment.Feb21;
+package com.aditi.Feb21.Assignment;
 
 import java.util.Arrays;
 
