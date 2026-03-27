@@ -1,11 +1,11 @@
-package com.aditi.March26;
+package com.aditi.March25;
 
-import com.aditi.March25.StartOfLoopInLL;
+import com.aditi.March26.LengthOfLoopInALinkedList;
 
-public class LengthOfLoopInALinkedList {
+public class StartOfLoopInLL {
     static class ListNode {
         int val;
-        LengthOfLoopInALinkedList.ListNode next;
+        StartOfLoopInLL.ListNode next;
 
         ListNode(int val) {
             this.val = val;
@@ -28,11 +28,12 @@ public class LengthOfLoopInALinkedList {
         // Creating loop: 5 -> 3
         head.next.next.next.next.next.next.next.next = head.next.next;
 
-        int result = lengthOfLoop(head);
+        int result = startOfLoop(head);
 
-        System.out.println("Length Of Loop : " + result);
+        System.out.println("Start Of Loop : " + result);
     }
-    public static int lengthOfLoop(ListNode head) {
+
+    public static int startOfLoop(ListNode head) {
 
         if (head == null || head.next == null)
             return 0;
